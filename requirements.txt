@@ -1,0 +1,19 @@
+streamlit
+numpy
+requests
+json5
+Pillow
+pickle5
+#for Deep learning model
+tensorflow
+# os-sys
+
+#for handling image
+opencv-python-headless
+opencv-contrib-python-headless
+mediapipe
+cvzone
+av
+streamlit_webrtc
+#other
+matplotlib
