@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="SignSight",  # => Quick reference - Streamlit
+    page_title="Sign Language App",  # => Quick reference - Streamlit
     layout="wide",  # wide
     initial_sidebar_state="auto")  # collapsed
 
@@ -29,8 +29,8 @@ import src.pages.resources
 import src.pages.tryme
 
 PAGES = {
-    "TryMe": src.pages.tryme,
-    "Resources": src.pages.resources,
+    "Video demo": src.pages.tryme,
+    "Tech stack": src.pages.resources,
 
 }
 
@@ -53,7 +53,4 @@ from cvzone.HandTrackingModule import HandDetector
 
 st.sidebar.title("Contribute")
 st.sidebar.info(
-    "This an open source project and you are very welcome to **contribute** your awesome "
-    "comments, questions, resources and apps as "
-    "[issues](https://github.com/evaenglert/flykr/issues) of or "
-    "to the [source code](https://github.com/evaenglert/flykr). ")
+    "Please find the source code for this project [here](https://github.com/evaenglert/flykr). ")
