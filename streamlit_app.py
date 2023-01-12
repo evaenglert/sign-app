@@ -28,6 +28,10 @@ import os
 import src.pages.resources
 import src.pages.tryme
 
+if not os.path.isfile('model.h5'):
+    subprocess.run(['curl --output model.h5 "https://media.githubusercontent.com/media/evaenglert/sign-app/blob/master/saved_models/asl_model.h5"'], shell=True)
+
+
 PAGES = {
     "Video demo": src.pages.tryme,
     "Tech stack": src.pages.resources,
