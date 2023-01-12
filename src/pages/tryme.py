@@ -17,7 +17,8 @@ def retrieve_model(PATH_MODEL, PATH_LABEL):
 
     with open(PATH_LABEL, "rb") as fp:
         label = pickle.load(fp)
-    model = load_model(PATH_MODEL)
+#     model = load_model(PATH_MODEL)
+    model = load_model('model.h5', compile=False)
     # label = np.load(PATH_LABEL, allow_pickle=True)
     return model, label
 
