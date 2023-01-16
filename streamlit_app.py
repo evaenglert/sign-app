@@ -27,6 +27,7 @@ from tensorflow.keras.models import load_model
 import os
 import src.pages.resources
 import src.pages.tryme
+import subprocess
 
 if not os.path.isfile('model.h5'):
     subprocess.run(['curl --output model.h5 "https://media.githubusercontent.com/media/evaenglert/sign-app/blob/master/saved_models/asl_model.h5"'], shell=True)
