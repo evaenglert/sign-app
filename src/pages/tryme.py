@@ -7,6 +7,10 @@ from tensorflow.keras.models import load_model
 import numpy as np
 import pickle
 import os
+import subprocess
+
+if not os.path.isfile('model.h5'):
+    subprocess.run(['curl --output model.h5 "https://media.githubusercontent.com/media/evaenglert/sign-app/blob/master/saved_models/asl_model.h5"'], shell=True)
 
 
 
