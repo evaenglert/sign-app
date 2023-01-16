@@ -29,7 +29,7 @@ def retrieve_model(PATH_MODEL, PATH_LABEL):
 
 # # print(os.getcwd())
 PATH_MODEL_ASL = "saved_models/asl_model.h5"
-PATH_LABEL_ASL = "saved_labels/asl_class_names2.txt"
+PATH_LABEL_ASL = "saved_labels/asl_class_names.txt"
 
 model_asl, label_asl = retrieve_model(PATH_MODEL_ASL, PATH_LABEL_ASL)
 
